@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: PLAY-1 and TASK-1
-    ansible.biultin.debug:
+    ansible.builtin.debug:
       msg: Hello i am from PlAY-1 AND TASK-1
 
 - name: PLAY-2
