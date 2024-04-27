@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
-  vars:
-    Course: Terraform
-    Trainer: Shravan Kumar
-    Duration: 121hrs
+  vars: #variable declaration
+    Course: "Terraform" # "" not mandatoty
+    Trainer: "Shravan Kumar"
+    Duration: "121hrs"
 
   tasks:
   - name: print information
