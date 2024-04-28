@@ -1,7 +1,7 @@
 - name: variable preference
   hosts: localhost
   vars: 
-    COMPLEMENT: Thank you from PLAY Variable
+    COMPLEMENT: Thank you from play Variable
   var_files:
   - vars.yaml
   vars_prompt:
