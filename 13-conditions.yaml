@@ -1,0 +1,10 @@
+- name: conditions
+  hosts: web
+  become: yes # for root access
+  tasks:
+  - name: check user exist or not
+    ansible.builtin.command: id expense
+    register: USER
+
+
+

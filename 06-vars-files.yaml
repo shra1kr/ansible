@@ -1,4 +1,4 @@
-- name: variables
+- name: variable files
   hosts: localhost
   vars_files:
   - vars.yaml
