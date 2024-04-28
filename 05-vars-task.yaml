@@ -5,6 +5,12 @@
     Trainer: shiva kumar
     Duration: 120hrs
   tasks:
-  - name: Multi variables
+  - name: printing overide information
+    vars:
+      Course: AWS
     ansible.builtin.debug:
       msg: "I am learning {{ Course }} from {{Trainer}} and Duration is {{Duration}}"
+
+  - name: printing inheritant information
+    ansible.builtin.debug:
+      msg: I am learning {{ Course }} from {{Trainer}} and Duration is {{Duration}}"
