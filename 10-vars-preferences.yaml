@@ -1,0 +1,16 @@
+- name: Variable preference
+  hosts: localhost
+  vars: 
+    COMPLEMENT: Thank you from PLAY Variable
+  var_files:
+    - vars.yaml
+  vars_prompt:
+  - name: COMPLEMENT
+    prompt: please enter complement
+    private: false
+  tasks:
+  - name: variable task level
+    vars:
+      COMPLEMENT: Tank you from TASK variable
+    ansible.builtin.debug:
+      msg: "Hi shravan {{COMPLEMENT}}"
