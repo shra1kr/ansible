@@ -16,10 +16,11 @@
     ansible.builtin.debug:
       msg: "Hi shravan {{COMPLEMENT}}"
 
-      # 1. arguments
+      # 1. Arguments
       # 2. Task level
       # 3. Variable file
       # 4. Prompt
       # 5. Play level
       # 6. Inventory file
-      # 7. role level
+      # 7. Role level
+      # ATVPPIR
