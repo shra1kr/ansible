@@ -3,7 +3,7 @@
   vars: 
     COMPLEMENT: Thank you from PLAY Variable
   var_files:
-    - vars.yaml
+  - vars.yaml
   vars_prompt:
   - name: COMPLEMENT
     prompt: please enter complement
