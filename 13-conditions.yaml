@@ -5,6 +5,11 @@
   - name: check user exist or not
     ansible.builtin.command: id expense
     register: USER
+    ignore_errors: true
+
+  - name: say hello
+    ansible.builtin.debug:
+      msg: "hello shravan"
 
 
 
