@@ -1,4 +1,4 @@
-- name: Variables-Inventoty
+- name: Variables Inventoty
   hosts: localhost
   tasks:
   - name: print variable using Inventory file
