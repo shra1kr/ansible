@@ -1,0 +1,6 @@
+- name: Variables-Inventoty
+  hosts: localhost
+  tasks:
+  - name: print variable susing Inventory file
+    ansible.builtin.debug:
+      msg: "I am going to {{Travel}} for meeting my friend {{Friend}}" and will back on {{Day}}"
