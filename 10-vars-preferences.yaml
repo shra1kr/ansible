@@ -9,7 +9,7 @@
     prompt: please enter complement
     private: false
   tasks:
-  - name: variable task level
+  - name: checking of variable preference
     vars:
       COMPLEMENT: Tank you from TASK variable
     ansible.builtin.debug:
