@@ -4,5 +4,5 @@
   - vars.yaml
   tasks:
   - name: print information
-    ansible.builtin.drbug:
+    ansible.builtin.debug:
       msg: "I am learning {{Course}} from {{Trainer}} and Duration is {{Duration}}"
