@@ -5,10 +5,10 @@
     COMPLEMENT: Thank you from play Variable
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: COMPLEMENT
-    prompt: please enter complement
-    private: false
+  # vars_prompt:
+  # - name: COMPLEMENT
+  #   prompt: please enter complement
+  #   private: false
   tasks:
   - name: checking of variable preference
     # vars:
@@ -19,3 +19,4 @@
       # 1. arguments
       # 2. Task level
       # 3. Variable file
+      # 4. Prompt
