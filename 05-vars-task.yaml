@@ -1,12 +1,12 @@
 - name: variables
   hosts: localhost
-  vars:
+  vars: # variable declaration
     Course: Devops
     Trainer: shiva kumar
     Duration: 120hrs
   tasks:
   - name: printing overide information
-    vars:
+    vars: # Task level variables
       Course: AWS
       Trainer: Shravan
       Duration: 1 month
