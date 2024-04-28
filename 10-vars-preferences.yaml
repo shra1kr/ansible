@@ -1,8 +1,8 @@
 
 - name: variable preference
   hosts: localhost
-  vars:
-    COMPLEMENT: Thank you from play Variable
+  # vars:
+  #   COMPLEMENT: Thank you from play Variable
   vars_files:
   - vars.yaml
   # vars_prompt:
@@ -20,3 +20,4 @@
       # 2. Task level
       # 3. Variable file
       # 4. Prompt
+      # 5. Play level
