@@ -8,9 +8,11 @@
   - name: printing overide information
     vars:
       Course: AWS
+      Trainer: Shravan
+      Duration: 1 month
     ansible.builtin.debug:
-      msg: "I am learning {{ Course }} from {{Trainer}} and Duration is {{Duration}}"
+      msg: "I am learning {{Course}} from {{Trainer}} and Duration is {{Duration}}"
 
   - name: printing inheritant information
     ansible.builtin.debug:
-       msg: I am learning {{ Course }} from {{Trainer}} and Duration is {{Duration}}"
+      msg: I am learning {{Course}} from {{Trainer}} and Duration is {{Duration}}"
