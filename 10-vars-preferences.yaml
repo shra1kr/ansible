@@ -3,7 +3,7 @@
   hosts: localhost
   vars:
     COMPLEMENT: Thank you from play Variable
-  var_files:
+  vars_files:
   - vars.yaml
   vars_prompt:
   - name: COMPLEMENT
