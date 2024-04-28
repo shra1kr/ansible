@@ -3,5 +3,4 @@
   tasks: #list of tasks/commands/collections
   - name: pinging the server
     ansible.builtin.ping:
-      msg: "Pinging the server if fine"
 
