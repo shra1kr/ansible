@@ -1,4 +1,4 @@
-- name: Variable preference
+- name: variable preference
   hosts: localhost
   vars: 
     COMPLEMENT: Thank you from PLAY Variable
