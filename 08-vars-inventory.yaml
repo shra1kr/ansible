@@ -3,4 +3,4 @@
   tasks:
   - name: print variable using inventory file
     ansible.builtin.debug:
-      msg: "I am going to {{Travel}} for meeting my friend {{Friend}}" and will back on {{Day}}"
+      msg: "I am going to {{Travel}} for meeting my friend {{Friend}} and will back on {{Day}}"
