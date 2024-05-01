@@ -70,3 +70,18 @@
   - name: converting Items/list to Dictionary
     ansible.builtin.debug:
       msg: "After converting: {{my_list | items2dict}}"
+
+ name: Coverting into List/items to Dictionary
+  hosts: localhost
+  vars:
+    my_list:
+      - Course-Ansible
+      - Trainer-shivakumar
+      - Duration-10Hrs
+  tasks: 
+  - name: Before Converting
+    ansible.builtin.debug:
+      msg: "Before Converting: {{my_list}}"
+  - name: converting Items/list to Dictionary
+    ansible.builtin.debug:
+      msg: "After converting: {{my_list | items2dict}}"
