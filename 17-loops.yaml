@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: Installing packages
-    ansible.builtinn.debug:
+    ansible.builtin.debug:
      msg: "Installing: {{item}}"
     loop:
     - mysql
