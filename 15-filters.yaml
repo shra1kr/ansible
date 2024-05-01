@@ -8,8 +8,17 @@
 - name: Convert into Upper case
   hosts: localhost
   vars:
-    name: shravan kumar chidurala
+    name: Hello i am learning Ansible
   tasks:
   - name: Given information Converting to Upper case
     ansible.builtin.debug:
       msg: "{{name | upper}}"
+
+- name: convert into Lower case
+  hosts: localhost
+  vars:
+    name: Hello i am learning Ansible
+  tasks:
+  - name: Given information convert into lower case
+    ansible.builtin.debug:
+      msg: "{{name | lower}}"
