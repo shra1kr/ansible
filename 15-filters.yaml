@@ -40,3 +40,17 @@
   - name: Print min and max ages
     ansible.builtin.debug:
       msg: "min age is:{{ages | min}} max age is:{{ages | max}}"
+
+- name: Converting Dictionary to items/list
+  hosts: localhost
+  my_dict: # This is called as Dictionary or map or key/value pairs
+    Cousrse: Ansible
+    Trainer: Siva kumar
+    Duration: 10Hrs
+  tasks:
+  - name: Before converting
+    ansible.builtin.debug:
+      msg: "{{my_dict}}"
+  - name: Ater conversion 
+    ansible.builtin.debug:
+      msg: "{{my_dict | dict2items}}" 
