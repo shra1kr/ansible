@@ -43,10 +43,11 @@
 
 - name: Converting Dictionary to items/list
   hosts: localhost
-  my_dict: # This is called as Dictionary or map or key/value pairs
-    Cousrse: Ansible
-    Trainer: Siva kumar
-    Duration: 10Hrs
+  vars:
+    my_dict: # This is called as Dictionary or map or key/value pairs
+      Cousrse: Ansible
+      Trainer: Siva kumar
+      Duration: 10Hrs
   tasks:
   - name: Before converting
     ansible.builtin.debug:
