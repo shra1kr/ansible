@@ -1,6 +1,6 @@
 - name: Installing packages
   hosts: localhost
-  taks:
+  tasks:
   - name: Installing packages
     ansible.builtinn.debug:
      msg: "Installing: {{item}}"
