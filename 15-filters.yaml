@@ -12,4 +12,4 @@
   tasks:
   - name: Given information Converting to Upper case
     ansible.builtin.debug:
-      msg: "number | upper"
+      msg: {{name | upper}}
