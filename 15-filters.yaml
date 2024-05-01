@@ -1,5 +1,5 @@
 - name: Default value
-  hosts: localhost
+  hosts: Localhost
   tasks:
   - name: Default Value printing
     ansible.builtin.debug:
