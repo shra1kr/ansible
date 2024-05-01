@@ -5,7 +5,7 @@
     prompt: please enter the number
     private: no
   tasks:
-  - name: number is less than 1o
+  - name: number is less than 10
     ansible.builtin.debug:
       msg: "The Gven number {{ number }} is lessthan 10"
     when: number | int < 10
