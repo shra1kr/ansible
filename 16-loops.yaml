@@ -1,10 +1,11 @@
 - name: Demo on Loops # Loop means we can make loop from list of items
   hosts: localhost
-  loop:
-  - Shell
-  - Linux
-  - Ansible
+ 
 tasks:
 - name: loops from list
   ansible.builtin.debug:
     msg: "Hello {{item}}"
+  loop:
+  - Shell
+  - Linux
+  - Ansible
