@@ -1,0 +1,10 @@
+- name: Installing packages
+  hosts: localhost
+  taks:
+  - name: Installing packages
+    ansible.builtinn.debug:
+     msg: "Installing: {{item}}"
+    loop:
+    - mysql
+    - nginx
+    - postfix
