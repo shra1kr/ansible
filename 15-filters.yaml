@@ -4,3 +4,12 @@
   - name: Default Value printing
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible')}}"
+
+- name: Convert into Upper case
+  hosts: localhost
+  vars:
+    name: shravan kumar chidurala
+  tasks:
+  - name: Given information Converting to Upper case
+    ansible.builtin.debug:
+      msg: "number | upper"
