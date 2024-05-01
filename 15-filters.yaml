@@ -71,13 +71,13 @@
     ansible.builtin.debug:
       msg: "After converting: {{my_list | items2dict}}"
 
-- name: Coverting into List/items to Dictionary
+- name: Coverting into List/items to Dictionary # wrong and doubt for me about list and map
   hosts: localhost
   vars:
-    my_list: [
+    my_list:
       - Course-Ansible
       - Trainer-shivakumar
-      - Duration-10Hrs ]
+      - Duration-10Hrs 
   tasks: 
   - name: Before Converting
     ansible.builtin.debug:
