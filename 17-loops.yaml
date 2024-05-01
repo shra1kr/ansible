@@ -2,8 +2,9 @@
   hosts: localhost
   tasks:
   - name: Installing packages
-    ansible.builtin.debug:
-     msg: "Installing: {{item}}"
+    ansible.builtin.dnf:
+     name: {{item}}
+     state: latest
     loop:
     - mysql
     - nginx
