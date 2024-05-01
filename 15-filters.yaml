@@ -51,7 +51,19 @@
   tasks:
   - name: Before conversion
     ansible.builtin.debug:
-      msg: "Before converting {{my_dict}}"
+      msg: "Before converting: {{my_dict}}"
   - name: Ater conversion 
     ansible.builtin.debug:
-      msg: "After converting {{my_dict | dict2items}}" 
+      msg: "After converting: {{my_dict | dict2items}}" 
+  
+- name: Coverting into List/items to Dictionary
+  hosts: localhost
+  vars:
+    my_list:
+      - {'key': 'Cousrse', 'value': 'Ansible'}
+      - {'key': 'Trainer', 'value': 'Siva kumar'}
+      - {'key': 'Duration', 'value': '10Hrs'}
+  tasks: 
+  - name: converting Items/list to Dictionary
+    ansible.builtin.debug:
+      msg: "After converting: {{my_list | items2dict}}"
