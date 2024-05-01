@@ -8,8 +8,8 @@
   - name: number is less than 1o
     ansible.builtin.debug:
       msg: "The Gven number {{ number }} is lessthan 10"
-    when: number < 10
+    when: number | int < 10
   - name: number is greater than 10
     ansible.builtin.debug:
       msg: "The Given number {{ number }} is greater than equal to 10"
-    when: number >= 10
+    when: number | int >= 10
