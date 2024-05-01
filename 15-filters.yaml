@@ -74,10 +74,10 @@
 - name: Coverting into List/items to Dictionary
   hosts: localhost
   vars:
-    my_list:
+    my_list: [
       - Course-Ansible
       - Trainer-shivakumar
-      - Duration-10Hrs
+      - Duration-10Hrs ]
   tasks: 
   - name: Before Converting
     ansible.builtin.debug:
