@@ -71,7 +71,7 @@
     ansible.builtin.debug:
       msg: "After converting: {{my_list | items2dict}}"
 
- name: Coverting into List/items to Dictionary
+- name: Coverting into List/items to Dictionary
   hosts: localhost
   vars:
     my_list:
