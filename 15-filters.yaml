@@ -1,6 +1,6 @@
-- name: Default value
+- name: default value
   hosts: localhost
 tasks:
-- name: Default Value printing
+- name: default Value printing
   ansible.builtin.debug:
     msg: "Hello {{Cousre}}"
