@@ -64,6 +64,9 @@
       - {'key': 'Trainer', 'value': 'Siva kumar'}
       - {'key': 'Duration', 'value': '10Hrs'}
   tasks: 
+  - name: Before Converting
+    ansible.builtin.debug:
+      msg: "Before Converting: {{my_list}}"
   - name: converting Items/list to Dictionary
     ansible.builtin.debug:
       msg: "After converting: {{my_list | items2dict}}"
