@@ -2,6 +2,8 @@
   hosts: localhost
   tasks:
   - name: command module
-    ansible.buitin.command: echo 'Hi this is from command module' > /tmp/command.txt
+    ansible.buitin.command: echo "'Hi this is from command module' > /tmp/command.txt"
   - name: shell module
-    ansible.buitin.shell: echo 'Hi this is from shell module' > /tmp/shell.txt
+    ansible.buitin.shell: echo "'Hi this is from shell module' > /tmp/shell.txt"
+
+#
